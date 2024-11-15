@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Museos de Bogotá</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>Museos de Bogotá</h1>
+    <p>Explora los museos más emblemáticos de Bogotá, como el Museo del Oro y el Museo Nacional.</p>
+  </header>
+        <main>
+            <section id="museo-oro">
+              <h2>Museo del Oro</h2>
+              <h3>Carrusel de imágenes</h3>
+              <div class="carousel">
+                <button class="carousel-button prev" onclick="prevImage()">←</button>
+                <div class="carousel-images">
+                  <img src="oro1.jpg" alt="Museo del Oro" class="carousel-image active">
+                  <img src="oro2.jpg" alt="Museo del Oro" class="carousel-image">
+                  <img src="oro3.jpg" alt="Museo del Oro" class="carousel-image">
+                  <img src="oro4.jpg" alt="Museo del Oro" class="carousel-image">
+                  <img src="oro5.jpg" alt="Museo del Oro" class="carousel-image">
+                </div>
+                <button class="carousel-button next" onclick="nextImage()">→</button>
+              </div>
+              <button onclick="toggleInfo('museo-oro')">Mostrar/Ocultar información</button>
+              <p>El Museo del Oro es famoso por su colección de piezas precolombinas de oro y otros materiales.</p>
+            </section>
+           
+            <section id="museo-nacional">
+              <h2>Museo Nacional de Colombia</h2>
+              <h3>Carrusel de imágenes</h3>
+              <div class="carousel">
+                <button class="carousel-button prev" onclick="prevImage()">←</button>
+                <div class="carousel-images">
+                  <img src="n1.jpg" alt="Museo Nacional de Colombia" class="carousel-image active">
+                  <img src="n2.jpg" alt="Museo Nacional de Colombia" class="carousel-image">
+                  <img src="n3.jpg" alt="Museo Nacional de Colombia" class="carousel-image">
+                  <img src="n4.jpg" alt="Museo Nacional de Colombia" class="carousel-image">
+                  <img src="n5.jpg" alt="Museo Nacional de Colombia" class="carousel-image">
+                </div>
+                <button class="carousel-button next" onclick="nextImage()">→</button>
+              </div>
+              <button onclick="toggleInfo('museo-nacional')">Mostrar/Ocultar información</button>
+              <p>El Museo Nacional de Colombia es el más antiguo del país, con una gran colección de arte e historia.</p>
+            </section>
+          </main>
+        
+          <button onclick="toggleTheme()">Cambiar Tema</button>
+          <script src="js/script.js"></script>
+        </body>
+        </html>
